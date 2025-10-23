@@ -159,7 +159,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.menu-link, .menu-btn {
+.search-input, .menu-link, .menu-btn {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
@@ -449,4 +449,78 @@ summary {
   color: #FAFAFB;
   border-radius: 12px;
   background-color: #FC5A5A;
+}
+
+.notification-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  color: #92929D;
+}
+.notification-btn-icon {
+  fill: currentColor;
+}
+.notification-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #F07F2E;
+  border-radius: 50%;
+}
+.notification-btn[data-notify=true]::after {
+  background-color: #FC5A5A;
+}
+
+.search-field {
+  transition: 300ms ease;
+  transition-property: width, color;
+  display: inline-flex;
+  align-items: center;
+  color: #92929D;
+  overflow: hidden;
+}
+.search-field:focus-within {
+  color: #FAFAFB;
+}
+@media only screen and (max-width: 1199.98px) {
+  .search-field {
+    width: 30px;
+  }
+  .search-field:focus-within {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .search-field {
+    margin-right: auto;
+  }
+}
+
+.search-icon {
+  flex-shrink: 0;
+  fill: currentColor;
+  margin-right: 12px;
+}
+
+.search-input {
+  min-width: 165px;
+  min-height: 20px;
+}
+@media only screen and (max-width: 1199.98px) {
+  .search-input {
+    transition: 300ms ease;
+    transition-property: opacity;
+    opacity: 0;
+  }
+  .search-input:focus {
+    opacity: 1;
+    transition-delay: 400ms;
+  }
 }/*# sourceMappingURL=main.css.map */
