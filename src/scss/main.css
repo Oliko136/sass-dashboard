@@ -180,7 +180,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-.co-workers-table thead th, .co-workers-position, .co-workers-accept {
+.badge-danger, .badge-warning, .badge-success, .co-workers-table thead th, .co-workers-position, .co-workers-accept {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.43;
@@ -884,4 +884,31 @@ summary {
     opacity: 1;
     transition-delay: 400ms;
   }
+}
+
+.badge-danger {
+  min-width: 96px;
+  padding: 4px 8px;
+  text-align: center;
+  color: #FAFAFB;
+  border-radius: 20px;
+  background-color: #FC5A5A;
+}
+
+.badge-warning {
+  min-width: 96px;
+  padding: 4px 8px;
+  text-align: center;
+  color: #FAFAFB;
+  border-radius: 20px;
+  background-color: #A461D8;
+}
+
+.badge-success {
+  min-width: 96px;
+  padding: 4px 8px;
+  text-align: center;
+  color: #FAFAFB;
+  border-radius: 20px;
+  background-color: #82C43C;
 }/*# sourceMappingURL=main.css.map */
